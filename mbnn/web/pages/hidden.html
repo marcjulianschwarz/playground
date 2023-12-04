@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Basics of NN Stuff</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <main class="main-container">
+        <h1>Math Basics of NN Stuff</h1>
+        <a href="/">Back</a>
+        <h2>The Need of Hidden Layers (XOR)</h2>
+        <p>
+            In each plot you can see two functions that try to separate the four black points
+            in the form of a XOR function.<br><br>
+            The first plot shows two <b>linear</b> functions that can already separate the points quite well. 
+            Just for reference the orange dots resemble the sigmoid function applied to the linear functions
+            at the points of interest (0,0) (0,1) (1,0) (1,1).<br><br>
+            The second plot shows the sigmoid function applied to the entire linear functions. You can now 
+            clearly see how the sigmoid function is able to separate the points.<br><br>
+            The third plot gives a better view on the decision surface.
+        </p>
+        <div class="iframe-list">
+        <div class="item">
+            <iframe src="/artifacts/sigmoid_one.html"></iframe>
+            <div>
+                <a href="/artifacts/sigmoid_one.html">Open</a>
+                <p>Two linear separators (inner parts of tanh)</p>
+            </div>
+        </div>
+        <div class="item">
+            
+            <iframe src="/artifacts/sigmoid_two.html"></iframe>
+            <div>
+                <a href="/artifacts/sigmoid_two.html">Open</a>
+                <p>Sigmoid activation function applied (grid)</p>
+            </div>
+        </div>
+        <div class="item">
+            
+            <iframe src="/artifacts/sigmoid.html"></iframe>
+            <div>
+                <a href="/artifacts/sigmoid.html">Open</a>
+                <p>Sigmoid activation function applied (surface)</p>
+            </div>
+        </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
