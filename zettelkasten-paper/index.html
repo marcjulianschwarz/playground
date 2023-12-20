@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src="jquery.ui.touch-punch.min.js"></script>
+        <script src="main.js"></script>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space%20Grotesk">
+
+        <title>
+            Zettelkasten Paper Builder
+        </title>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <h1>Zettelkasten Paper Builder</h1>
+            <input id="state-name">
+            <button onclick="saveCurrentState()">Save Setup</button>
+            <br><br>
+            <select id="savedStates">
+            </select>
+
+            <button onclick="setState()">Set State</button>
+            <button onclick="removeAllViews()">Remove all Views</button>
+            <br>
+            <br>
+            <label for="viewSelector">Select a view</label>
+            <select id="views">
+                <option value="text">Text</option>
+                <option value="link">Link</option>
+                <option value="tag">Tags</option>
+                <option value="list">List</option>
+                <option value="calendar">Calendar</option>
+                <option value="checklist">Checklist</option>
+            </select>
+
+            <button onclick="addView()">Add View</button>
+            <br><br>
+            
+            <input id="pattern-width" value="20">
+
+            <button onclick="drawGrid()">Draw Grid</button>
+            <button onclick="drawLines()">Draw Lines</button>
+
+            <div class="papier-container">
+                <canvas id="paper-canvas"></canvas>
+                
+                <div draggable="true" class="view text template" name="text" view-id="0">
+                    <div class="head">Text View</div>
+                    <div onclick="deleteView(this)" class="delete">Delete</div>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+
+                </div>
+                
+                <div draggable="true" class="view link template" name="link" view-id="1">
+                    <div class="head">Link View</div>
+                    <div onclick="deleteView(this)" class="delete">Delete</div>
+                    Link: 202201241050
+                </div>
+
+                <div draggable="true" class="view tag template" name="tag" view-id="2">
+                    <div class="head">Tags View</div>
+                    <div onclick="deleteView(this)" class="delete">Delete</div>
+                    <ul>
+                        <li class="tag">#tag1</li>
+                        <li class="tag">#tag2</li>
+                        <li class="tag">#tag3</li>
+                    </ul>
+                </div>
+
+                <div draggable="true" class="view list template" name="list" view-id="3">
+                    <div class="head">List View</div>
+                    <div onclick="deleteView(this)" class="delete">Delete</div>
+                    <ol>
+                        <li>Entry 1</li>
+                        <li>Entry 2</li>
+                        <li>Entry 3</li>
+                    </ol>
+                </div>
+
+                <div draggable="true" class="view calendar template" name="calendar" view-id="4">
+                    <div class="head">Calendar View</div> 
+                    <div onclick="deleteView(this)" class="delete">Delete</div>
+                    <div class="calendar-date">
+                        <h2 class="month">Januar</h2>
+                        <h2 class="year">2022</h2>
+                    </div>
+                    <div class="calendar-grid">
+
+                    </div>
+                        
+                </div>
+
+                <div draggable="true" class="view checklist template" name="checklist" view-id="5">
+                    <div class="head">Checklist View</div> 
+                    <div onclick="deleteView(this)" class="delete">Delete</div>
+                    <ul>
+                        <li>todo 1</li>
+                        <li>todo 2</li>
+                        <li>todo 3</li>
+                        <li>todo 4</li>
+                        <li>todo 5</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+
+
+    </body>
+</html>
