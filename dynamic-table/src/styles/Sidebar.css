@@ -1,0 +1,33 @@
+.sidebar {
+  height: 100%;
+  width: 400px;
+  background-color: var(--gray-1);
+  padding: 10px;
+  position: relative;
+  border-right-color: var(--gray-2);
+  border-right-style: solid;
+  border-right-width: 1px;
+  box-shadow: var(--shadow-elevation-medium);
+}
+.sidebar .resize-handle {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: col-resize;
+}
+.sidebar-toggle {
+  float: right;
+}
+.sidebar-closed {
+  padding: 10px;
+  position: relative;
+  height: 100%;
+  background-color: var(--gray-1);
+  border-right-color: var(--gray-2);
+  border-right-style: solid;
+  border-right-width: 1px;
+  box-shadow: var(--shadow-elevation-medium);
+}

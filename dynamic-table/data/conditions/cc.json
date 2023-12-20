@@ -1,0 +1,1 @@
+[{"color":{"base":"blue","brightness":"3"},"column":{"title":"First Name","key":"name","type":"string"},"operator":"includes","value":"","type":"string","id":1},{"color":{"base":"emerald","brightness":"3"},"column":{"title":"Phone","key":"phone","type":"string"},"operator":"includes","value":"23","type":"string","id":2}]

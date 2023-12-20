@@ -1,0 +1,34 @@
+.App {
+  margin-bottom: 100px;
+}
+.rating {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.rating .selection {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.rating .selection .scene-selection .controls {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.rating .selection .scene-selection .controls .set-reset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.rating .selection .scene-selection .controls .next-previous {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
