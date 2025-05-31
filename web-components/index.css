@@ -1,0 +1,51 @@
+@import "components/countrycard/countrycard.css";
+@import "app/app.css";
+@import "preview.css";
+
+:root {
+  --font-size-n: 1rem;
+  --font-size-m: 1.5rem;
+  --font-size-l: 2rem;
+
+  --font-color-primary: rgb(230, 230, 230);
+
+  --bg-color-primary: rgb(58, 58, 58);
+
+  --border-color-primary: rgb(91, 91, 91);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d0d0d;
+  font-size: var(--font-size-n);
+  color: var(--font-color-primary);
+}
+
+.x-button {
+  background-color: var(--bg-color-primary);
+  color: var(--font-color-primary);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  border: none;
+  font-size: var(--font-size-m);
+  border-radius: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.x-button:hover {
+  cursor: pointer;
+  outline: 1px solid var(--border-color-primary);
+}

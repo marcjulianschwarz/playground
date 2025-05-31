@@ -1,0 +1,13 @@
+.preview-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.preview {
+    padding: 40px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
